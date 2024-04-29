@@ -55,7 +55,7 @@ const Thirdsection = () => {
             src="/Features/section3.svg"
             alt="Features"
             width={1150}
-            height={50}
+            height={500}
             style={{
               maxWidth: "100%",
               height: "auto",
@@ -64,7 +64,7 @@ const Thirdsection = () => {
 
         
         <div className="flex flex-col items-center justify-center mt-6 lg:flex lg:flex-row  ">
-          <div className="space-y-5 overflow-auto basis-[217px] relative lg:flex lg:flex-row lg:space-y-0 lg:space-x-5 lg:basis-[1000px]">
+          <div className="space-y-5 overflow-auto basis-[217px] relative lg:flex lg:flex-row lg:space-y-0 lg:space-x-5 lg:basis-[1000px] ">
           {data.map((cards, index) => (
               <div className="space-x-4" key={index}>
                 <Card

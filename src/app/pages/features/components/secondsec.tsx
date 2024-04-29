@@ -49,7 +49,7 @@ const Secondsection = () => {
             src="/Features/section2.svg"
             alt="Features"
             width={1150}
-            height={50}
+            height={500}
             style={{
 
               maxWidth: "100%",
