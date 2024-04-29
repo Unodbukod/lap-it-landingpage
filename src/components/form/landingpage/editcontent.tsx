@@ -6,13 +6,17 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@radix-ui/react-label";
 import { Input } from "@/components/ui/input";
 import { DialogClose, DialogFooter } from "@/components/ui/dialog";
+import { toast } from "sonner";
+import { useRouter } from 'next/navigation';
 
 interface UpdateContentFormProps {
   getId: () => string; // Define the type for the getId prop
 }
 
 const UpdateContentForm: React.FC<UpdateContentFormProps> = ({ getId }) => {
+  const router = useRouter();
   const [content, setContent] = useState("");
+  
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault();
@@ -35,9 +39,9 @@ const UpdateContentForm: React.FC<UpdateContentFormProps> = ({ getId }) => {
       }
 
       // Content updated successfully
-      console.log("Content updated successfully");
+      toast.success("Content updated successfully");
     } catch (error) {
-      console.error("Error updating content:", error);
+      toast.error("Error updating content");
     }
   };
 

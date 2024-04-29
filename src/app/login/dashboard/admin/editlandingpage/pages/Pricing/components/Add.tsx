@@ -11,6 +11,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
 
 const Add = () => {
   const [title, setTitle] = useState("");
@@ -44,9 +45,9 @@ const Add = () => {
       if (!response.ok) {
         throw new Error("Failed to add item");
       }
-      alert("Item added successfully");
+      toast.success("Item added successfully");
     } catch (error) {
-      console.error("Error adding item:");
+      toast.error("Error adding item");
     }
   };
 

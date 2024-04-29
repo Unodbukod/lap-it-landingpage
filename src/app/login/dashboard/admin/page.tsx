@@ -1,7 +1,9 @@
+
 import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 import React from "react";
 import Image from "next/image";
+import SignoutButton from "./components/signoutbutton";
 // Triaged, use ternary operator, and create a separate component for nav bar and wrap it inside the layout.tsx
 const Page = async () => {
   const session = await getServerSession(authOptions);
@@ -50,6 +52,9 @@ const Page = async () => {
                 >
                   <span>Create Account</span>
                 </a>
+              </li>
+              <li>
+                <SignoutButton/>
               </li>
               <li></li>
               {/* Add more nav items here */}

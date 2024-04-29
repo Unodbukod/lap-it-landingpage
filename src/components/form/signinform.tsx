@@ -16,6 +16,7 @@ import { Button } from "../ui/button";
 import { FaGoogle } from "react-icons/fa";
 import { getSession, signIn } from 'next-auth/react';
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 
 
@@ -58,14 +59,13 @@ const SignInForm = () => {
               router.push("/login/signin/"); // Default path if role is not recognized
               break;
           }
-          alert("Login successful!");
+          toast.success("Login Successfully!")
         } else {
           throw new Error("Session not found");
         }
       }
     } catch (error) {
-      console.error('An unexpected error occurred:', error);
-      alert('An unexpected error occurred during login. Please try again later.');
+      toast.error('An unexpected error occurred during login. Please try again later.');
     }
   }
   return (

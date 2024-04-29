@@ -10,6 +10,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
+import { toast } from 'sonner';
 
 const Update = ({ id }: { id: number }) => { // Accept id prop
   const [title, setTitle] = useState('');
@@ -40,9 +41,9 @@ const Update = ({ id }: { id: number }) => { // Accept id prop
       if (!response.ok) {
         throw new Error('Failed to update item');
       }
-      alert('Item updated successfully');
+      toast.success('Item updated successfully');
     } catch (error) {
-      console.error('Error updating item:', error);
+      toast.error('Error updating item');
     }
   };
     

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import SignUpForm from "@/components/form/signupform";
 import { Button } from "@/components/ui/button";
 
@@ -13,11 +13,12 @@ const Page = () => {
         <div className="w-1/2 h-screen relative hidden lg:block">
           {/* Background Image */}
           <Image
+            className="xl:w-[1000px]"
             src="/login/Background.png"
+            width={700}
+            height={10}
             alt=""
-            sizes="100vw"
-            width={1000}
-            height={100}/>
+          />
           {/* Logo */}
           <div>
             <a href="/.">
