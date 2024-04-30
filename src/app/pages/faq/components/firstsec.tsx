@@ -106,16 +106,14 @@ const firstsec = () => {
                   How do you protect customer data and privacy?
                 </AccordionTrigger>
                 <AccordionContent className="px-5">
-                  <h1 className="pt-4">Point of Sales</h1>
+                  <h1 className="pt-4">Data and Privacy</h1>
                   <p className="pt-4">
-                    Lorem ipsum dolor sit amet consectetur. Facilisi
-                    pellentesque libero aenean porta adipiscing imperdiet
-                    faucibus. At mi odio tincidunt a. Sed egestas est dignissim
-                    tristique. Pellentesque nunc in turpis eget tincidunt risus.
-                    Risus volutpat at amet venenatis. Ultrices urna venenatis
-                    pellentesque integer feugiat faucibus non nunc vitae.
-                    Facilisis sit quam felis morbi hac. Augue arcu tellus neque
-                    sem.
+                    To keep customer info safe in our POS systems, we use strong
+                    codes to lock it up tight, and only let authorized people
+                    access it. Our encryption methods scramble the data, making
+                    it unreadable to anyone without permission. We're serious
+                    about protecting your information, so we update our security
+                    measures to stay one step ahead of potential threats.
                   </p>
                 </AccordionContent>
               </AccordionItem>
