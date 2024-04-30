@@ -69,7 +69,7 @@ const firstsec = () => {
                   <h1 className="pt-4">Demo</h1>
                   <p className="pt-4">
                     The system demo is all about making it easy for our clients.
-                    We'll do it wherever suits them best – whether that's at
+                    We'll do it wherever suits them best whether thats at
                     their place or ours. If they prefer coming to our office,
                     we're more than happy to host them there and show them how
                     everything works. It's all about making sure they get what
