@@ -57,7 +57,7 @@ const Features = () => {
     <section className="flex items-center justify-center max-h-none mb-20 select-none">
       <div className="flex flex-col">
         <div className="text-center">
-          <div className="flex flex-row justify-center gap-3">
+          <div className="flex flex-row justify-center gap-3 mt-10">
             <div className="text-[48px] font-bold bg-red-600 rounded-lg text-white px-5">
               <h1>PACKAGE</h1>
             </div>

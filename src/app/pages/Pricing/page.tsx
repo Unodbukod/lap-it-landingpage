@@ -8,9 +8,6 @@ const Pricing = () => {
     <>
       <Navbar />
       <div>
-        <div className="text-green-500 sm:text-red-500 md:text-fuchsia-700 xl:text-blue-600">
-          responsive
-        </div>
         <Features />
         <div className="bg-blue-50 py-3 pt-11 mt-7">
           {" "}
